@@ -1,0 +1,102 @@
+.container {
+    background-color: #f6f6f6;
+    width: 100vw; /* full width of the viewport */
+    min-height: 100vh;
+    padding: 4rem 6vw;
+    box-sizing: border-box;
+    background-size: cover; /* in case you use background image later */
+    background-position: center;
+  }
+  
+  .heading {
+    color: #1a1a1a;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rate {
+    color: #aaa;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: bold;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.2rem;
+  }
+  
+  .rating {
+    color: #fbbf24;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .skill {
+    background-color: #e6f4ea;
+    color: #047857;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 9999px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+  
+  .chatBtn,
+  .bookBtn {
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background 0.2s ease;
+  }
+  
+  .chatBtn:hover,
+  .bookBtn:hover {
+    background-color: #15803d;
+  }
+  
